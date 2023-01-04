@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+
+{% block title %}
+Начало
+{% endblock %}
+
+{% block body %}
+<h1>Форма</h1>
+<form action="" method="post" novalidate>
+    <p>
+        {{ form.username.label }} <br>
+        {{ form.username(size=20) }}
+    </p>
+    <p>
+        {{ form.password.label }} <br>
+        {{ form.password(size=20) }}
+    </p>
+    <p>{{ form.submit() }}</p>
+</form>
+{% endblock %}
